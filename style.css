@@ -9,39 +9,24 @@ html, body {
     width: 100%;
 }
 
-body {
-    background-color: #333333;
-    color: whitesmoke;
-}
 
 .main {
+    padding: 10px 10px;
     height: 100%;
     width: 100%;
-    display: flex; 
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    position: relative; /* Position relative for absolute children */
+    position: relative; 
 }
 
-nav {
-    margin-top: 20px; /* Space between content and nav */
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-nav ul {
-    list-style-type: none; /* Remove bullet points */
-}
-
-nav ul li {
-    display: inline; /* Display links inline */
-    margin: 0 10px; /* Space between links */
-}
-
-nav a {
-    color: whitesmoke; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+#nav-bar a{
+    text-decoration: none;
+    background-color: none;
+    background-color: blue;
+    border-radius: 30%;
+    color: white;
 }

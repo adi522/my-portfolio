@@ -9,6 +9,9 @@ html, body {
     width: 100%;
 }
 
+body{
+    background-color: "#xEEB3";
+}
 
 .main {
     padding: 10px 10px;

@@ -85,3 +85,36 @@ function smoothCursor() {
 }
 
 smoothCursor();
+
+var tl = gsap.timeline()
+tl.from('li',{
+  y:-100,
+  opacity:0,
+  duration:0.5,
+  delay:0.2,
+  stagger:0.2,
+})
+
+tl.from('.hero',{
+  y:100,
+  delay:0.5,
+  opacity:0,
+})
+
+
+
+tl.from('.about', {
+  y: -100,
+  opacity: 0,
+  duration: 0.6,
+  ease: 'power3.out',
+  scrollTrigger: {
+    trigger: '.about .content',
+    scroller: 'body',
+    markers: false,
+    start: 'top 80%',
+    end: 'bottom 20%',
+    scrub: 1,
+    toggleActions: 'play none none none',
+  }
+});

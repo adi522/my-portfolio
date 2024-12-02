@@ -27,7 +27,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
+    gap: 20px;
     /* background-color: yellow; */
+  }
+
+  .nav-links a{
+    font-size: 25px;
+    font-weight: 200;
   }
 
 /* cursor */
@@ -38,7 +45,7 @@
   border-radius: 50%;
   position: absolute;
   pointer-events: none; 
-  z-index: 1000;
+  z-index: 999;
   transform: translate(-50%, -50%); 
 }
 
@@ -66,15 +73,15 @@
   }
   
   .nav-links li a {
-    color: #fff;
+    /* color: #fff; */
     transition: color 0.3s;
   }
   
   .nav-links li a:hover {
-    color: #ffdd57;
-    box-shadow: 0 10px 20px rgba(184, 176, 176, 0.5);
-    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5); */
-  }
+    color: #ffdd57; 
+    text-shadow: 0 0px 30px rgb(255, 252, 252); 
+}
+
   
   /* Hero Section */
   .hero {
@@ -113,8 +120,10 @@
   .hero .cta:hover {
     transform: scale(1.1);
     color: black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(184, 176, 176, 0.5);
   }
-
+  
 
   /* Education */
 
@@ -226,28 +235,28 @@
   }
 
   /* Resume button styling */
-.resume-btn {
-  display: inline-block;
-  background-color: #ffdd57; 
-  color: #333; 
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  text-decoration: none; 
-  border-radius: 15px;
-  margin-top: 30px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-align: center;
-}
+  .resume-btn {
+    display: inline-block;
+    background-color: #ffdd57; 
+    color: #333; 
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none; 
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+  }
 
-.resume-btn:hover {
+  .resume-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(184, 176, 176, 0.5);
     color: black;
-}
+  }
 
-.resume-btn:active {
-  background-color: #ce9e0f; 
-}
+  .resume-btn:active {
+    background-color: #ce9e0f; 
+  }
 
 
   /* Skills Section */
@@ -305,7 +314,7 @@
     padding: 50px 20px;
     text-align: center;
     color: #fff;
-}
+  }
 
 .contact h2 {
     font-size: 2.5rem;
@@ -353,6 +362,6 @@
     color: #ffdd57; 
 }
 
-.contact-card span {
+  .contact-card span {
     color: #fff;
-}
+  }

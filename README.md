@@ -6,9 +6,9 @@ This project demonstrates a custom mouse cursor with a smooth movement and a tra
 - **Smooth Cursor Movement**: The cursor smoothly follows the mouse movement with a customizable speed.
 - **Trace Effect**: A trail of circular "traces" follow the cursor and fade out after a brief animation.
 
-##Live Demo
-You can see the live demo of the project here:
 
+## Live Demo
+You can see the live demo of the project here:
 https://adi522.github.io/my-portfolio
 
 ## Files in this Project
